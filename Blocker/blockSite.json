@@ -1,0 +1,12 @@
+[
+    {
+        "action": {
+            "type": "block"
+        },
+        "trigger": {
+            "url-filter": "www.tatvasoft.com"
+        }
+    }
+]
+
+
