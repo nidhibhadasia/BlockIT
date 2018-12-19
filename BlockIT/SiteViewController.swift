@@ -77,8 +77,8 @@ class SiteViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
 
     @objc func logOutAction() {
-        print("Logout")
-       // self.performSegue(withIdentifier: "LogoutIdentifier", sender: self)
+        let viewControllers: [UIViewController] = self.navigationController!.viewControllers as [UIViewController];
+        self.navigationController?.popToViewController(viewControllers[0], animated: true)
     }
     @IBAction func submitClicked(_ sender: Any) {
         
@@ -163,5 +163,4 @@ class SiteViewController: UIViewController, UITableViewDelegate, UITableViewData
             }
         }
     }
-
 }

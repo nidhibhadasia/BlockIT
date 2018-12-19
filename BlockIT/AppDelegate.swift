@@ -15,15 +15,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
         
         let navigationBarAppearace = UINavigationBar.appearance()
         navigationBarAppearace.tintColor = uicolorFromHex(rgbValue: 0xffffff)
         navigationBarAppearace.barTintColor = uicolorFromHex(rgbValue:0x0082C8)
-        navigationBarAppearace.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-        
+        navigationBarAppearace.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
         
         SFContentBlockerManager.reloadContentBlocker(withIdentifier:"Bhadasia.BlockIT.Blocker", completionHandler: nil)
         
